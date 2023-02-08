@@ -24,8 +24,21 @@ const getGames = async (id) => {
 const createGames = async (game) => {
   try {
     const newGame = await db.one(
-      "INSERT INTO games() VALUES($1, $2, $3, $4, $5) RETURNING *",
-      []
+      "INSERT INTO games(title, genre, number_of_players, ESRD_rating, publisher, developer, type, release_date, present, digital, image, description) VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING *",
+      [
+        game.title,
+        game.genre,
+        game.number_of_players,
+        game.ESRD_rating,
+        game.publisher,
+        game.developer,
+        game.type,
+        game.release_date,
+        game.present,
+        game.digital,
+        game.image,
+        game.description,
+      ]
     )
     return newGame
   } catch (error) {
@@ -50,8 +63,22 @@ const deleteGames = async (id) => {
 const updateGames = async (id, game) => {
   try {
     const updatedGame = await db.one(
-      "UPDATE games SET name=$1, $2, $3, $4, $5, WHERE id=$6 RETURNING *",
-      []
+      "UPDATE games SET title=$1, genre=$2, number_of_players=$3, ESRD_rating=$4, publisher=$5, developer=$6, type=$7, release_date=$8, present=$9, digital=$10, image=$11, description=$12, WHERE id=$13 RETURNING *",
+      [
+        game.title,
+        game.genre,
+        game.number_of_players,
+        game.ESRD_rating,
+        game.publisher,
+        game.developer,
+        game.type,
+        game.release_date,
+        game.present,
+        game.digital,
+        game.image,
+        game.description,
+        id,
+      ]
     )
     return updatedGame
   } catch (error) {
