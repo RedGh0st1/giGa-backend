@@ -1,6 +1,6 @@
 DROP TABLE IF exist GigA_dev;
 CREATE DATABASE GigA_dev;
-A
+
 \c GigA_dev;
 
 DROP TABLE IF EXISTS games;
@@ -13,7 +13,8 @@ CREATE TABLE games(
     number_of_players VARCHAR(255),
     ESRD_rating TEXT NOT NULL,
     publisher TEXT,
-    developer TEXT,
+    developer TEXT, 
+    type TEXT,
     release_date INT,
     present BOOLEAN,
     digital BOOLEAN,
