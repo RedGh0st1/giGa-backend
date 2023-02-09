@@ -12,6 +12,7 @@ const {
 // INDEX
 router.get("/", async (req, res) => {
   const allGame = await getAllGames()
+  console.log("Hi")
   allGame[0]
     ? res.status(200).json(allGame)
     : res.status(500).json({ error: "server error" })
@@ -31,7 +32,7 @@ router.get("/:id", async (req, res) => {
 
 router.post("/", async (req, res) => {
   try {
-    const createdGame = await createdGame(req.body)
+    const createdGame = await createGames(req.body)
   } catch (error) {
     res.status(500).json({ error: error })
   }

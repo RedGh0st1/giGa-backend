@@ -1,11 +1,14 @@
-//  CONIFGURATION
+// IMPORTS
 const express = require("express")
+const cors = require("cors")
+const gameController = require("./controllers/gamesController")
+//  CONIFGURATION
 const app = express()
 
 // MIDDLEWARE
 app.use(cors())
 app.use(express.json())
-app.use("/games", gamesController)
+app.use("/games", gameController)
 
 // ROUTES
 app.get("/", (req, res) => {

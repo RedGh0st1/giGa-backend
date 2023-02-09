@@ -1,4 +1,4 @@
-DROP TABLE IF exist GigA_dev;
+DROP DATABASE IF exist GigA_dev;
 CREATE DATABASE GigA_dev;
 
 \c GigA_dev;
