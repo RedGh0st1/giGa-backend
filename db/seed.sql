@@ -1,46 +1,49 @@
 \c GigA_dev;
 
-INSERT INTO games(title, genre, number_of_players, ESRD_rating, publisher, developer, type, release_date, present, digital, image, description) 
+
+
+
+INSERT INTO games(title, Platform, genre, number_of_players, ESRD_rating, publisher, developer, release_date, present, digital, image, description) 
 VALUES
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
-()
+('Sonic Forces', 'playstation 4', ' Platform game, Action-adventure game', '1 player','E 10+ Fantasy Violence', 'Sega', 'Hardlight', '11/7/2017', 'true', 'false', 'https://image.api.playstation.com/cdn/UP0177/CUSA05637_00/vfs1Nf9GvyNIGBRqXMB9MGr3WMMmXVkJ.png?w=1024&thumb=false', 'In SONIC FORCES, the evil Dr. Eggman has conquered much of the world with help from a powerful and mysterious new villain named Infinite. Now, you must assist Sonic and build an army to reclaim the world as they fight against chaos and destruction.'),
+('Jump Force', 'playstation 4', 'Fighting game, Adventure game', 'Multiplayer, single-player', 'teen adolescents', ' Namco Bandai Games America Inc.', 'Spike Chunsoft', '02/14/2019', 'true', 'false', 'https://upload.wikimedia.org/wikipedia/en/0/0c/Jumpforcegame.jpg', 'When the real world collides with many of the Shōnen Jump universes, humanity is invaded by the "Venoms", an army of mind-controlled villains led by Kane and Galena. In order to fight back, many heroes are recruited to join the "Jump Force" under the leadership of Director Glover and his A.I. partner Navigator. But a suspicious figure is using both the Jump Force and the Venoms as an attempt to gain a mysterious artifact and merge all worlds into one.'),
+('Little Nightmares Complete Edition', 'PlayStation 4', 'Puzzle, Adventure game, Platform game, Survival horror, adventure', 'single-player', 'Adventure', 'teen adolescents', ' Bandai Namco Entertainment ', ' Tarsier Studios', '6/6/2017', 'true', 'false', 'https://image.api.playstation.com/vulcan/ap/rnd/202204/1908/pam5dUS6w13ovToXCy8mcRZ6.png', 'On his journey, The Kid will explore hidden parts of The Maw offering a different perspective on Sixs adventures.'),
+('Naruto Shippuden: Ultimate Ninja Storm 4', 'playstation 4', 'Fighting game, Action-adventure game', 'Single-player, multiplayer', 'teen adolescents', 'Bandai Namco Entertainment', 'CyberConnect2', '02/4/2016', 'true', 'false', 'https://cdn.dlcompare.com/game_tetiere/upload/gameimage/file/7442.jpeg', ' NARUTO SHIPPUDEN™: Ultimate Ninja® STORM 4, a broad set of Ninja Skills will be yours to use against the fiercest foes you’ll ever encounter. Massive attacks in the form of secret techniques, energetic evolutions with the “Awakening”, the inimitable shurikens & kunais and a unique playstyle for each ninja!'),
+('Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles', 'PlayStation 4', ' Fighting, action', ' Single-player, multiplayer', 'teen adolescents', 'Sega, Aniplex', ' CyberConnect2', '10/29/2021', 'true', 'false', 'https://upload.wikimedia.org/wikipedia/en/4/40/Demon_Slayer_Kimetsu_no_Yaiba_%E2%80%93_The_Hinokami_Chronicles_box_art.jpg', 'Follow the story from Demon Slayer: Kimetsu no Yaiba Tanjiro Kamado, Unwavering Resolve Arc—where Tanjiro joins the Demon Slayer Corps— to Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train featuring the Flame Hashira, Kyojuro Rengoku!'),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
+('', '', '', '', '', '', '', '', '', '', '', '', ''),
 ();
