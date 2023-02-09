@@ -4,7 +4,7 @@ const app = express()
 
 // MIDDLEWARE
 app.use(cors())
-app.use(expres.json())
+app.use(express.json())
 app.use("/games", gamesController)
 
 // ROUTES
