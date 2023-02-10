@@ -15,7 +15,7 @@ router.get("/", async (req, res) => {
   console.log("Hi")
   allGame[0]
     ? res.status(200).json(allGame)
-    : res.status(500).json({ error: "server error" })
+    : res.status(500).json({ error: "server error 1" })
 })
 
 // SHOW
