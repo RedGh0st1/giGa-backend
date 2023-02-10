@@ -1,4 +1,4 @@
-DROP DATABASE IF exist GigA_dev;
+DROP DATABASE IF EXISTS GigA_dev;
 CREATE DATABASE GigA_dev;
 
 \c GigA_dev;
@@ -18,6 +18,6 @@ CREATE TABLE games(
     release_date INT,
     present BOOLEAN,
     digital BOOLEAN,
-    image TEXT DEFAULT'https://dummyimage.com/400x400/6e6c6e/e9e9f5.png&text=No+Image',
-    description TEXT,
-);
+    image TEXT DEFAULT 
+    'https://dummyimage.com/400x400/6e6c6e/e9e9f5.png&text=No+Image',
+    description TEXT);
