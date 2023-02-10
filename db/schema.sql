@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS GigA_dev;
-CREATE DATABASE GigA_dev;
+DROP DATABASE IF EXISTS giga_dev;
+CREATE DATABASE giga_dev;
 
-\c GigA_dev;
+\c giga_dev;
 
 -- DROP TABLE IF EXISTS games;
 
