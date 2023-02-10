@@ -24,7 +24,7 @@ router.get("/:id", async (req, res) => {
   const { id } = req.params
   const oneGame = await getGames(id)
   console.log("yo")
-  !oneGame
+  !oneGame.message
     ? res.status(200).json(oneGame)
     : res.status(404).json({ error: "Not Found!!!" })
 })
