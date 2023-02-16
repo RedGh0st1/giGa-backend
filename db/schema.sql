@@ -12,7 +12,7 @@ CREATE TABLE games(
     platform TEXT NOT NULL, 
     genre TEXT,
     number_of_players VARCHAR(255),
-    ESRD_rating TEXT NOT NULL,
+    esrd_rating TEXT NOT NULL,
     publisher TEXT,
     developer TEXT, 
     release_date INT,
@@ -20,4 +20,4 @@ CREATE TABLE games(
     digital BOOLEAN,
     image TEXT DEFAULT'https://dummyimage.com/400x400/6e6c6e/e9e9f5.png&text=No+Image',
     description TEXT);
-    
+   
