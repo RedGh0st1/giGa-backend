@@ -3,7 +3,7 @@ CREATE DATABASE giga_dev;
 
 \c giga_dev;
 
--- DROP TABLE IF EXISTS games;
+DROP TABLE IF EXISTS games;
 
 
 CREATE TABLE games(
