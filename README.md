@@ -1,5 +1,8 @@
 # Portfolio-project---backend
-Backend of PERN Portfolio project-  GigA( Ghost interactive gaming Archive) personal gaming archive
+Backend of PERN Portfolio project-  
+
+
+GigA.  (Ghost interactive gaming Archive) personal gaming archive
 
 
 ## Getting Started
