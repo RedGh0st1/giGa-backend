@@ -2,6 +2,7 @@
 const express = require("express")
 const cors = require("cors")
 const gameController = require("./controllers/gamesController")
+const usersController = require("./controllers/usersController")
 //  CONIFGURATION
 const app = express()
 
@@ -9,6 +10,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use("/games", gameController)
+app.use("/users", usersController)
 
 // ROUTES
 app.get("/", (req, res) => {

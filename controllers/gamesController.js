@@ -36,7 +36,7 @@ router.post("/", async (req, res) => {
     const createdGame = await createGames(req.body)
     res.status(200).json(createdGame)
   } catch (error) {
-    res.status(500).json({ error: createdGame.message })
+    res.status(500).json({ error: createGames.message })
   }
 })
 
@@ -47,7 +47,7 @@ router.delete("/:id", async (req, res) => {
     const deletedGame = await deleteGames(id)
     res.status(200).json(deletedGame)
   } catch (error) {
-    res.status(404).json({ error: deletedGame.message })
+    res.status(404).json({ error: deleteGames.message })
   }
 })
 
@@ -57,7 +57,7 @@ router.put("/:id", async (req, res) => {
     const updateGame = await updateGames(id, req.body)
     res.status(200).json(updateGame)
   } catch (error) {
-    res.status(404).json({ error: updateGame.message })
+    res.status(404).json({ error: updateGames.message })
   }
 })
 module.exports = router
