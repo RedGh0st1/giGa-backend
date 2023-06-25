@@ -1,5 +1,11 @@
 \c giga_dev;
 
+INSERT INTO giga_users(name, email, password,image_url)
+VALUES
+('Lennie', 'lnursej22480@yahoo.com', 'Bela9214','picture holder'),
+('Zoe','zoe12344@yahoo.com','bighead01','picture holder'),
+('Solomon','Sol330@yahoo.com','kingsul33','picture holder'),
+('Koi','koi412@yahoo.com','duolc100','picture holder');
 
 INSERT INTO games(title, platform, genre, number_of_players, esrd_rating, publisher, developer, release_date, present, digital, image, description) 
 VALUES
@@ -11,5 +17,8 @@ VALUES
 ('God of War', 'PlayStation 4', 'Action-Adventure', 'single-player', 'Mature', 'Santa Monica Studio', 'Sony Interactive Entertainment', 2018, true, false, '{"https://upload.wikimedia.org/wikipedia/en/a/a7/God_of_War_4_cover.jpg"}', 'God of War is an action-adventure game developed by Santa Monica Studio and published by Sony Interactive Entertainment.'),
 ('Super Smash Bros Ultimate', 'Nintendo Switch', 'Fighting', '8', 'Everyone 10+', 'Nintendo', 'Nintendo', 2018, true, true,'{"https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/games/switch/s/super-smash-bros-ultimate-switch/hero"}','A powerful & unknown enemy has attacked - and won. Hundreds of video game characters from past Nintendo games have been turned to spirits by Galeem and his army of Master Hands. Only Kirby has escaped the initial attack, riding a star. Now Kirby must venture by himself and discover the nature of the World of Light, as he attempts to free the other fighters, which have been turned into mindless puppets by Galeem.'),
 ('The Last of Us Part 1', 'PlayStation 4', 'Action-Adventure', 'single-player', 'Mature', 'Naughty Dog', 'Sony Interactive Entertainment', 2020, true, true,'{"https://upload.wikimedia.org/wikipedia/en/d/d5/The_Last_of_Us_Cover_Art.png"}','The Last of Us is an action-adventure survival horror video game developed by Naughty Dog and published by Sony Computer Entertainment. It was released for the PlayStation 3 worldwide on June 14, 2013. Players control Joel, a smuggler tasked with escorting a teenage girl, Ellie, across a post-apocalyptic United States.'),
-('The Legend of Zelda: Breath of the Wild', 'Nintendo Switch', 'Action-Adventure', '1', 'Everyone 10+', 'Nintendo', 'Nintendo', 2017, true, true,'{"https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/c_scale,w_900/ncom/en_US/games/switch/t/the-legend-of-zelda-breath-of-the-wild-switch/hero"}','Forget everything you know about The Legend of Zelda games. Step into a world of discovery, exploration, and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series. Travel across vast fields, through forests, and to mountain peaks as you discover what has become of the kingdom of Hyrule in this stunning Open-Air Adventure. Now on Nintendo Switch, your journey is freer and more open than ever. Take your system anywhere, and adventure as Link any way you like.');
+('The Legend of Zelda: Breath of the Wild', 'Nintendo Switch', 'Action-Adventure', '1', 'Everyone 10+', 'Nintendo', 'Nintendo', 2017, true, true,'{"https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.0/c_scale,w_900/ncom/en_US/games/switch/t/the-legend-of-zelda-breath-of-the-wild-switch/hero"}','Forget everything you know about The Legend of Zelda games. Step into a world of discovery, exploration, and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series. Travel across vast fields, through forests, and to mountain peaks as you discover what has become of the kingdom of Hyrule in this stunning Open-Air Adventure. Now on Nintendo Switch, your journey is freer and more open than ever. Take your system anywhere, and adventure as Link any way you like.'),
+(),
+(),
+(),
 

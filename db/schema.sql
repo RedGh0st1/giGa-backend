@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS giga_users (
   name TEXT NOT NULL,
   email TEXT NOT NULL,
   password TEXT NOT NULL,
+  image_url TEXT,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
