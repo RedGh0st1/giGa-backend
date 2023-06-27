@@ -6,6 +6,7 @@ DROP TABLE IF EXISTS giga_users;
 CREATE TABLE IF NOT EXISTS giga_users (
   id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
+  username TEXT UNIQUE NOT NULL,
   email TEXT NOT NULL,
   password TEXT NOT NULL,
   image_url TEXT,
@@ -19,13 +20,13 @@ CREATE TABLE games (
   platform TEXT NOT NULL, 
   genre TEXT,
   number_of_players VARCHAR(255),
-  esrb_rating TEXT NOT NULL,
+  esrd_rating TEXT NOT NULL,
   publisher TEXT,
   developer TEXT, 
   release_date INT,
   present BOOLEAN,
   digital BOOLEAN,
-  image_url TEXT [],
+  image_url TEXT,
   description TEXT
 );
 
@@ -129,14 +130,14 @@ DROP TABLE IF EXISTS game_images;
    CREATE TABLE game_images (
      id SERIAL PRIMARY KEY,
         game_id INTEGER REFERENCES games (id) ON DELETE CASCADE,
-        image_url TEXT
+        image_url TEXT []
 );
 
 DROP TABLE IF EXISTS game_videos;
    CREATE TABLE game_videos (
       id SERIAL PRIMARY KEY,
          game_id INTEGER REFERENCES games (id) ON DELETE CASCADE,
-         video_url TEXT
+         video_url TEXT []
 );
 
 DROP TABLE IF EXISTS game_sessions;
