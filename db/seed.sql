@@ -57,5 +57,4 @@ VALUES
   (5, 'mom', 'PC Gaming System laptop', ARRAY['3ds_front.jpg', '3ds_back.jpg'], 'Custom Microsoft build', 1, NULL, '2020-02-26'),
   (1, 'RedGhost_24', 'PlayStation 4 pro', ARRAY['switch_front.jpg', 'switch_back.jpg'], 'Sony', 1, 1, '2016-11-10');
 
--- build seed data for ownerships
 
