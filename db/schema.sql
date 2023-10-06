@@ -3,11 +3,12 @@ CREATE DATABASE giga_dev;
 \c giga_dev;
 
 DROP TABLE IF EXISTS giga_users;
-CREATE TABLE IF NOT EXISTS giga_users (
+CREATE TABLE giga_users (
   id SERIAL PRIMARY KEY,
-  name TEXT NOT NULL,
+  first_name TEXT NOT NULL,
+  last_name TEXT NOT NULL,
   username TEXT UNIQUE NOT NULL,
-  email TEXT NOT NULL,
+  email TEXT UNIQUE NOT NULL,
   password TEXT NOT NULL,
   image_url TEXT,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP

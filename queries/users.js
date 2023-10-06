@@ -35,27 +35,36 @@ const newUser = async (user) => {
   }
 }
 
-const loginUser = async () => {
+const loginUser = async (username, password) => {
   try {
-    const loginUser = await db.one(
-      "SELECT * FROM giga_users WHERE username = $1",
-      username
-    )
-    const validPassword = await bcrypt.compare(password, loginUser.password)
+    const user = await db.one("SELECT * FROM giga_users WHERE username = $1", [
+      username,
+    ])
+    const validPassword = await bcrypt.compare(password, user.password)
     if (!validPassword) {
       throw { status: 401, error: "Invalid username or password" }
     }
-    return loginUser
+    const { password: _, ...userWithoutPassword } = user
+    return userWithoutPassword
   } catch (err) {
+    console.error("Error logging in user: ", err)
     return err
   }
 }
+
 const updateNewGameToUser = async () => {}
-const deleteUser = async () => {
+const deleteUser = async (username) => {
   try {
-    const removeUser = await db.one("DELETE * FROM")
-  } catch (error) {}
+    const deletedUser = await db.one(
+      "DELETE FROM giga_users WHERE username = $1 RETURNING *",
+      [username]
+    )
+    return deletedUser
+  } catch (error) {
+    return error
+  }
 }
+
 const getAllUsersGames = async () => {}
 
 module.exports = {
